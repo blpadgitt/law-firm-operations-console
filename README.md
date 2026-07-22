@@ -4,6 +4,16 @@ Sanitized portfolio prototype for a law-firm operations workspace. The app prese
 
 This repository uses only synthetic names, dates, matter details, and workflow examples. It does not contain real firm data, client information, legal advice, credentials, private documents, internal URLs, or privileged material.
 
+## Live Demo
+
+https://blpadgitt.github.io/law-firm-operations-console/
+
+## Screenshots
+
+![LexOps desktop dashboard](./lexops-web-app-screenshot.png)
+
+![LexOps mobile dashboard](./lexops-web-app-mobile.png)
+
 ## What This Demonstrates
 
 - Domain-aware product thinking for legal operations
