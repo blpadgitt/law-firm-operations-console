@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LexOps Firm Console</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Primary">
+        <div class="brand">
+          <div class="brand-mark">L</div>
+          <div>
+            <strong>LexOps</strong>
+            <span>Firm Suite</span>
+          </div>
+        </div>
+
+        <nav class="nav-list">
+          <a class="active" href="#dashboard">Dashboard</a>
+          <a href="#matters">Matters</a>
+          <a href="#drafting">Drafting</a>
+          <a href="#review">Review Queue</a>
+          <a href="#security">Security</a>
+          <a href="#deployments">Deployments</a>
+        </nav>
+
+        <div class="sidebar-panel">
+          <span class="eyebrow">Firm Mode</span>
+          <strong>Synthetic PI</strong>
+          <p>Discovery-first workflows with attorney approval gates.</p>
+        </div>
+      </aside>
+
+      <main>
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Law-firm AI paralegal workspace</p>
+            <h1>LexOps Firm Console</h1>
+          </div>
+          <div class="topbar-actions" aria-label="Status filters">
+            <button class="icon-button" type="button" aria-label="Search matters">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.3-4.3m1.3-5.2a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z"/></svg>
+            </button>
+            <button class="primary-button" type="button">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+              New matter
+            </button>
+          </div>
+        </header>
+
+        <section class="summary-grid" id="dashboard" aria-label="Firm summary">
+          <article>
+            <span class="metric-label">Active matters</span>
+            <strong>42</strong>
+            <small>8 need attorney review</small>
+          </article>
+          <article>
+            <span class="metric-label">Drafts pending</span>
+            <strong>17</strong>
+            <small>Discovery, M&C, med chronologies</small>
+          </article>
+          <article>
+            <span class="metric-label">Deadline risks</span>
+            <strong>5</strong>
+            <small>Calendar verification required</small>
+          </article>
+          <article>
+            <span class="metric-label">Security posture</span>
+            <strong>Privacy-ready</strong>
+            <small>Policy set pending hosting choice</small>
+          </article>
+        </section>
+
+        <section class="workspace">
+          <div class="matter-board" id="matters">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Matter command center</p>
+                <h2>Mock Client v. Transit Co.</h2>
+              </div>
+              <span class="status-pill">Attorney review</span>
+            </div>
+
+            <div class="matter-layout">
+              <article class="case-brief">
+                <div class="brief-header">
+                  <span>PI - motor vehicle</span>
+                  <strong>Discovery phase</strong>
+                </div>
+                <dl>
+                  <div><dt>Incident</dt><dd>Jan 14, 2025</dd></div>
+                  <div><dt>Venue</dt><dd>Orange County</dd></div>
+                  <div><dt>Next deadline</dt><dd>Verify discovery cutoff</dd></div>
+                  <div><dt>Missing</dt><dd>Billing, prior MRI, witness texts</dd></div>
+                </dl>
+              </article>
+
+              <article class="assistant-panel">
+                <div class="chat-header">
+                  <div class="avatar">L</div>
+                  <div>
+                    <strong>LexOps</strong>
+                    <span>AI Litigation Workflow Assistant</span>
+                  </div>
+                </div>
+                <div class="message">
+                  <p>I found three issues before service: the RFP responses cite photos not produced, the med chronology has a 41-day treatment gap, and the RFA draft needs attorney confirmation on causation language.</p>
+                </div>
+                <div class="quick-actions">
+                  <button type="button">Draft deficiency letter</button>
+                  <button type="button">Build med chronology</button>
+                  <button type="button">Create depo outline</button>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <aside class="review-panel" id="review">
+            <div class="section-heading compact">
+              <div>
+                <p class="eyebrow">Review queue</p>
+                <h2>Approval gates</h2>
+              </div>
+            </div>
+
+            <div class="queue-item urgent">
+              <strong>Discovery responses</strong>
+              <span>Needs source check: Form Rog 6.4</span>
+            </div>
+            <div class="queue-item">
+              <strong>Meet-and-confer</strong>
+              <span>Ready for attorney tone review</span>
+            </div>
+            <div class="queue-item">
+              <strong>Medical chronology</strong>
+              <span>Missing billing records flagged</span>
+            </div>
+          </aside>
+        </section>
+
+        <section class="feature-grid" id="drafting">
+          <article>
+            <h3>Drafting Studio</h3>
+            <p>Discovery, objections, meet-and-confer letters, demand support, mediation outlines, and client-update drafts with source notes.</p>
+          </article>
+          <article>
+            <h3>Document Intelligence</h3>
+            <p>Medical records, transcripts, productions, photos, and correspondence organized into chronologies, issue lists, and missing-evidence tasks.</p>
+          </article>
+          <article>
+            <h3>Mobile Companion</h3>
+            <p>Attorney phone workflow for quick matter lookup, voice notes, depo prep, review alerts, and task capture from court or mediation.</p>
+          </article>
+          <article id="deployments">
+            <h3>Private Deployment</h3>
+            <p>Cloud, dedicated tenant, or firm-controlled hardware appliance with audit logs, role-based access, retention policy, and encryption controls.</p>
+          </article>
+        </section>
+
+        <section class="security-strip" id="security">
+          <div>
+            <p class="eyebrow">Security management preview</p>
+            <h2>Built for confidential legal and medical information</h2>
+          </div>
+          <ul>
+            <li>Draft-only external communications</li>
+            <li>Matter-scoped memory</li>
+            <li>Role-based review and approval</li>
+            <li>Audit trail for every generated artifact</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
